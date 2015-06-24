@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+
+    <style type="text/css">
+
+        /*
+            transition-timing-function
+            指定动画过渡函数
+            ease 先慢后快
+            linear 匀速变化
+            ease-in 低于匀速的，由慢到快
+            ease-out 和 ease－in的好像一样，有待求证
+            ease-in-out 先慢，后快
+        */
+
+        .box{
+            width: 200px;
+            height: 200px;
+            background: orange;
+            margin: 200px auto;
+            -webkit-transition-property: transform;
+            -moz-transition-property: transform;
+            -ms-transition-property: transform;
+            -o-transition-property: transform;
+            transition-property: transform;
+            -webkit-transition-duration: 1s;
+            -moz-transition-duration: 1s;
+            -ms-transition-duration: 1s;
+            -o-transition-duration: 1s;
+            transition-duration: 1s;
+            -webkit-transition-timing-function: ease-in-out;
+            -moz-transition-timing-function: ease-in-out;
+            -ms-transition-timing-function: ease-in-out;
+            -o-transition-timing-function: ease-in-out;
+            transition-timing-function: ease-in-out;
+
+        }
+
+        .box:hover{
+            -webkit-transform: rotate(360deg);
+            -moz-transform: rotate(360deg);
+            -ms-transform: rotate(360deg);
+            -o-transform: rotate(360deg);
+            transform: rotate(360deg);
+        }
+
+
+
+
+
+    </style>
+
+</head>
+<body>
+
+
+<div class="box"></div>
+
+
+</body>
+</html>

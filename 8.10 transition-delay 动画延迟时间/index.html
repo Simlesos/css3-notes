@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style type="text/css">
+
+        /*
+            transition-delay:1s;
+            动画开始时间延迟多长时间
+        */
+
+        /*
+            多个动画属性可以用，分割，分别是下面四个哥们
+            动画过渡属性，过渡时间，过渡函数，过渡延迟时间
+
+        */
+
+        .box {
+            width: 200px;
+            height: 200px;
+            background:orange;
+            margin:200px auto;
+            -webkit-transition: background 1s ease-in .5s,border-radius 2s ease-out .5s,transform 2s ease-in-out .5s;
+            -moz-transition: background 1s ease-in .5s,border-radius 2s ease-out .5s,transform 2s ease-in-out .5s;
+            -ms-transition: background 1s ease-in .5s,border-radius 2s ease-out .5s,transform 2s ease-in-out .5s;
+            -o-transition: background 1s ease-in .5s,border-radius 2s ease-out .5s,transform 2s ease-in-out .5s;
+            transition: background 1s ease-in .5s,border-radius 2s ease-out .5s,transform 2s ease-in-out .5s;
+
+        }
+
+        .box:hover{
+            background: royalblue;
+            -webkit-border-radius: 100px;
+            -moz-border-radius: 100px;
+            border-radius: 100px;
+            -webkit-transform: rotate(360deg);
+            -moz-transform: rotate(360deg);
+            -ms-transform: rotate(360deg);
+            -o-transform: rotate(360deg);
+            transform: rotate(360deg);
+        }
+
+    </style>
+
+</head>
+<body>
+<div class="box"></div>
+</body>
+</html>

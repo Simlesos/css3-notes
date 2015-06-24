@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style type="text/css">
+
+        /*
+           多重背景，也就是css2里background的属性加origin、clip和size组成的新background的多次叠加，
+           缩写时为用逗号隔开的每组值；用分解写法时，如果有多个背景图片，而其他属性只有一个，表明所有背景
+           图片，而其他属性只有一个，表明所有背景图片应用该属性值。
+        */
+
+        div.box{
+            width: 300px;
+            height: 140px;
+            border: 1px solid #999;
+            background: url(http://img.mukewang.com/54cf2365000140e600740095.jpg) no-repeat left top,
+            url(http://img.mukewang.com/54cf238a0001728d00740095.jpg) no-repeat top center,
+            url(http://img.mukewang.com/54cf23b60001fd9700740096.jpg) no-repeat right top;
+        }
+
+
+    </style>
+</head>
+<body>
+<div class="box"></div>
+
+
+</body>
+</html>

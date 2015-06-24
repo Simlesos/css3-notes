@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style type="text/css">
+
+        /*
+        :before 在元素内容前面插入一个标签
+        :after 在元素最后插入一个标签
+        */
+
+        div.box{
+            width: 200px;
+            height: 200px;
+            box-shadow: 0 0 5px #000;
+        }
+
+        .box div{
+            height: 100px;
+            margin: 0 auto;
+
+
+        }
+
+        .box:before{
+            content: '之前插入';
+        }
+
+        .box:after{
+            content: '之后插入';
+        }
+
+    </style>
+
+</head>
+<body>
+
+<div class="box">
+    <div>我是内容</div>
+</div>
+
+
+</body>
+</html>

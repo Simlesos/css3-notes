@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+
+    <style type="text/css">
+
+        /*
+            父元素中唯一一个［同类］子元素的元素
+        */
+
+        div > p:only-of-type{
+            background: red;
+        }
+
+
+    </style>
+
+</head>
+
+
+<body>
+
+<div class="wrapper">
+    <p>我是一个段落</p>
+    <p>我是一个段落</p>
+    <p>我是一个段落</p>
+</div>
+
+<div class="wrapper">
+    <p>我是一个段落</p>
+</div>
+
+<div class="wrapper">
+    <div>我是一个Div元素</div>
+    <p>我是一个段落</p>
+    <div>我是一个Div元素</div>
+</div>
+
+</body>
+</html>

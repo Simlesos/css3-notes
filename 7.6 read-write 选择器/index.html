@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style type="text/css">
+        /*
+            :read-write 与 :read-only 刚好相反，是选择可读写的元素
+        */
+
+        :read-write{
+            border: 1px solid orange;
+        }
+
+    </style>
+
+
+</head>
+<body>
+
+<form action="#">
+    <div>
+        <label for="name">姓名:</label>
+        <input type="text" name="name" id="name" placeholder="大漠" />
+    </div>
+    <div>
+        <label for="address">地址:</label>
+        <input type="text" name="address" id="address" placeholder="中国上海" readonly="readonly" />
+    </div>
+</form>
+
+</body>
+</html>

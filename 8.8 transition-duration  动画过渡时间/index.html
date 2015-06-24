@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style type="text/css">
+
+        /*
+            transition-duration:0.8s;
+            动画过渡时间，俗称 持续时间
+        */
+        .box{
+            width: 200px;
+            height: 200px;
+            background: orange;
+            transition-property:border-radius;
+            -webkit-transition-duration: 1s;
+            -moz-transition-duration: 1s;
+            -ms-transition-duration: 1s;
+            -o-transition-duration: 1s;
+            transition-duration: 1s;margin: 100px auto;
+        }
+        
+        .box:hover{
+            border-radius:100px;
+        }
+
+
+
+
+    </style>
+</head>
+<body>
+
+    <div class="box"></div>
+
+</body>
+</html>

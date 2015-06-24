@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>位移</title>
+    <style type="text/css">
+
+        /*
+            translate()
+            将元素向指定方向移动，类似于position中的 relative
+            可以把元素从原来的位置移动，而不影响 x、y 轴上的任何 web 组件
+
+        */
+
+        .box{
+            width: 200px;
+            height: 200px;
+            background: orange;
+
+            -webkit-transform: translate(50%, 50%);
+            -moz-transform: translate(50%, 50%);
+            -ms-transform: translate(50%, 50%);
+            -o-transform: translate(50%, 50%);
+            transform: translate(50%, 50%);
+        }
+        
+        
+
+    </style>
+</head>
+<body>
+<div class="box"></div>
+
+</body>
+</html>

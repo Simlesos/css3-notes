@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style type="text/css">
+
+        /*
+            transform: rotate(45deg)
+            按图形原点顺时针旋转45度，负数代表逆时针旋转45度
+        */
+
+        div.box{
+            width: 200px;
+            height: 200px;
+            margin: 100px auto;
+            background: red;
+            -webkit-transform: rotate(45deg);
+            -moz-transform: rotate(45deg);
+            -ms-transform: rotate(45deg);
+            -o-transform: rotate(45deg);
+            transform: rotate(45deg);
+            text-align: center;
+            position: relative;
+        }
+        
+        div span{
+            position: absolute;
+            top: 50px;
+            left: 50px;
+            color: #000;
+            font-size: 100px;
+            -webkit-transform: rotate(135deg);
+            -moz-transform: rotate(135deg);
+            -ms-transform: rotate(135deg);
+            -o-transform: rotate(135deg);
+            transform: rotate(135deg);
+        }
+
+
+    </style>
+</head>
+<body>
+
+<div class="box">
+    <span>福</span>
+</div>
+
+
+</body>
+</html>

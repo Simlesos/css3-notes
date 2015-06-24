@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>变形－原点</title>
+    <style type="text/css">
+
+        /*
+
+            transform-origin
+            改变角度旋转、扭曲、缩放、位移的原点
+
+        */
+
+        .box{
+            width: 200px;
+            height: 200px;
+            background: orange;
+            margin: 100px auto;
+        }
+
+        /* 设置原点 */
+        .box{
+            -webkit-transform-origin: top left;
+            -moz-transform-origin: top left;
+            -ms-transform-origin: top left;
+            -o-transform-origin: top left;
+            transform-origin: top left;
+        }
+
+        /* 角度旋转 */
+        .box{
+            -webkit-transform: rotate(0deg);
+            -moz-transform: rotate(0deg);
+            -ms-transform: rotate(0deg);
+            -o-transform: rotate(0deg);
+            transform: rotate(0deg);
+        }
+
+        /* 扭曲 */
+        .box{
+            -webkit-transform: skew(0deg, 0deg);
+            -moz-transform: skew(0deg, 0deg);
+            -ms-transform: skew(0deg, 0deg);
+            -o-transform: skew(0deg, 0deg);
+            transform: skew(0deg, 0deg);
+        }
+        
+        /* 放大、缩小 */
+        .box{
+            -webkit-transform: scale(1);
+            -moz-transform: scale(1);
+            -ms-transform: scale(1);
+            -o-transform: scale(1);
+            transform: scale(1);
+        }
+        
+        .box{
+            -webkit-transform: translate(0px, 0px);
+            -moz-transform: translate(0px, 0px);
+            -ms-transform: translate(0px, 0px);
+            -o-transform: translate(0px, 0px);
+            transform: translate(0px, 0px);
+        }
+        
+
+        
+
+    </style>
+</head>
+<body>
+
+<div class="box"></div>
+
+</body>
+</html>

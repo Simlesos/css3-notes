@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style type="text/css">
+
+        /*
+            transform:skew(x,y)
+            使元素发生形变，x代表横坐标，y代表纵坐标 或者单独使用 skewX()  skewY()
+        */
+        
+        .box{
+            width: 300px;
+            height: 300px;
+            margin: 100px auto;
+            box-shadow: 0 0 5px #000;
+            position: relative;
+        }
+
+        .left{
+            width: 50px;
+            height: 300px;
+            position: absolute;
+            top: 0;
+            left: 125px;
+            background: #000;
+            -webkit-transform: skew(-45deg);
+            -moz-transform: skew(-45deg);
+            -ms-transform: skew(-45deg);
+            -o-transform: skew(-45deg);
+            transform: skew(-45deg);
+
+
+        }
+
+        .right{
+            width: 50px;
+            height: 300px;
+            position: absolute;
+            top: 0;
+            left: 125px;
+            background: #000;
+            -webkit-transform: skew(45deg);
+            -moz-transform: skew(45deg);
+            -ms-transform: skew(45deg);
+            -o-transform: skew(45deg);
+            transform: skew(45deg);
+        }
+        
+
+    </style>
+
+</head>
+<body>
+<div class="box">
+    <div class="left"></div>
+    <div class="right"></div>
+</div>
+</body>
+</html>

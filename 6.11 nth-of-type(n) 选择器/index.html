@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+
+    <style type="text/css">
+        /*
+
+            :nth-of-type
+
+            和 :nth-child(n) 一样的，只不过是，只会选择对应的元素类型
+
+            比如下面这个例子，选择的就是 p 标签
+        */
+
+
+        .wrapper > p:nth-of-type(2n+1){
+            background: red;
+        }
+
+
+
+    </style>
+
+</head>
+<body>
+
+<div class="wrapper">
+    <div>我是一个Div元素</div>
+    <p>我是一个段落元素</p>
+    <div>我是一个Div元素</div>
+    <p>我是一个段落</p>
+    <div>我是一个Div元素</div>
+    <p>我是一个段落</p>
+    <div>我是一个Div元素</div>
+    <p>我是一个段落</p>
+    <div>我是一个Div元素</div>
+    <p>我是一个段落</p>
+    <div>我是一个Div元素</div>
+    <p>我是一个段落</p>
+    <div>我是一个Div元素</div>
+    <p>我是一个段落</p>
+    <div>我是一个Div元素</div>
+    <p>我是一个段落</p>
+</div>
+
+
+</body>
+</html>

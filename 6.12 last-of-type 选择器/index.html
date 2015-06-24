@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style type="text/css">
+        /*
+            :last-of-type
+            和 :first-of-type 功能一样，只不过选择的是父元素的某个类型
+            的最后一个子元素
+        */
+
+        .wrapper > p:last-of-type {
+            background: red;
+        }
+
+    </style>
+
+
+</head>
+<body>
+
+<div class="wrapper">
+    <p>我是第一个段落</p>
+
+    <p>我是第二个段落</p>
+
+    <p>我是第三个段落</p>
+
+    <div>我是第一个Div元素</div>
+    <div>我是第二个Div元素</div>
+    <div>我是第三个Div元素</div>
+</div>
+
+</body>
+</html>

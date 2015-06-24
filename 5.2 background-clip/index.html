@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+
+    <style type="text/css">
+        /*
+            background-clip : border-box | padding-box | content-box | no-clip
+            参数分表表示，从边框开始切，从内填充开始切，从内容开始切
+        */
+
+        div.box{
+            width:200px;
+            height: 200px;
+            padding: 20px;
+            background: url(http://static.mukewang.com/static/img/logo_index.png) no-repeat;
+            border: 20px dashed #000;
+            background-origin: border-box ;
+            background-clip:content-box;
+        }
+    </style>
+</head>
+<body>
+
+<div class="box"></div>
+
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style type="text/css">
+        /*
+            和 jquery 的 :not 选择器一摸一样 除什么什么之外
+        */
+
+        form{
+            width: 200px;
+            margin: 20px auto;
+        }
+
+        div{
+            margin-bottom: 20px;
+        }
+
+        input:not([type="submit"]){
+            border:1px solid darkred;
+        }
+
+
+    </style>
+</head>
+<body>
+<form action="#">
+    <div>
+        <label for="name1">Text Input:</label>
+        <input type="text" name="name" id="name1" placeholder="John Smith" />
+    </div>
+    <div>
+        <label for="name2">Password Input:</label>
+        <input type="text" name="name" id="name2" placeholder="John Smith" />
+    </div>
+    <div>
+        <input type="submit" value="Submit" />
+    </div>
+</form>  ​
+
+
+</body>
+</html>

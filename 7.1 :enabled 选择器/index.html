@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+
+    <style type="text/css">
+
+        /*
+            表单元素加入 disabled = "disabled" 属性 ，可以设置是否启用
+
+            :enabled
+            选择可用的表单元素
+        */
+
+        input[type="text"]:enabled{
+            box-shadow: 0 0 5px #f36;
+            border:1px solid red;
+        }
+
+
+    </style>
+
+</head>
+<body>
+<form action="#">
+
+    <div>
+        <label for="enabled">可用输入框:</label>
+        <input type="text" id="enabled" />
+    </div>
+
+    <div>
+        <label for="disabled">禁用输入框:</label>
+        <input type="text" id="disabled" disabled="disabled" />
+    </div>
+
+</form>
+</body>
+</html>

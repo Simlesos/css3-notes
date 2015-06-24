@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style type="text/css">
+        /*
+            keyframes
+            关键帧定制
+        */
+        @-webkit-keyframes cate {
+            0%{
+                background: red;
+            }
+            20%{
+                background:blue;
+            }
+            40%{
+                background:orange;
+            }
+            60%{
+                background:green;
+            }
+            80%{
+                background:yellow;
+            }
+            100%{
+                background: red;
+            }
+        }
+        div{
+            width: 200px;
+            height: 200px;
+            background:red;
+            margin: 200px auto;
+        }
+        
+        div:hover {
+            -webkit-animation: cate 5s ease .2s;
+            -o-animation: cate 5s ease .2s;
+            animation: cate 5s ease .2s;
+        }
+
+    </style>
+
+
+
+
+
+</head>
+<body>
+<div class="box"></div>
+</body>
+</html>

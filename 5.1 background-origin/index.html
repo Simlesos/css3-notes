@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+
+    <style type="text/css">
+
+        /*
+        background-origin : border-box | padding-box | content-box
+        参数分别表示图片是从边框，还是内边距，内容区域开始显示的
+
+        注意： 如果背景图片不是 no-repeat 则这个属性无效
+        */
+
+        div.box {
+            height: 200px;
+            width: 200px;
+            border: 20px dashed #000;
+            background: url(http://static.mukewang.com/static/img/logo_index.png)no-repeat;
+            -webkit-background-origin: content-box;
+            background-origin: content-box;
+            padding: 50px;
+        }
+
+
+
+    </style>
+
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+
+    <style type="text/css">
+        /*
+            设置图片的大小，可以用长度值或百分比显示，还可以通过cover和contain来对图片进行伸缩
+            background-size: auto | <长度值> | <百分比> | cover | contain
+            auto: 默认值，不改变图片原来的宽高
+            <长度值>: 成对出现如200px 50px ，将背景图宽高一次设置为宽高两个值
+            <百分比>: 0% ~ 100% 之间的任何值，将北京图片宽高一次设置为所在元素宽高乘以前面百分比得出的数值，当设置一个值时同上
+            cover : 将图片等比缩放填满整个容器(不变性)
+            contain : 将背景图片等比缩放至某一边紧贴容器边缘为止
+        */
+
+        div.box{
+            width: 300px;
+            height: 140px;
+            background: url(http://static.mukewang.com/static/img/logo_index.png) no-repeat;
+            background-size: cover ;
+        }
+
+    </style>
+
+</head>
+<body>
+<div class="box"></div>
+</body>
+</html>
